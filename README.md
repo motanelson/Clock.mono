@@ -4,6 +4,11 @@
 apt-get install dotnet-sdk-6.0
 
 
-apr-get install man
+apt-get install man
+
+apt-get install gcc
+
+
+
  
 
