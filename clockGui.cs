@@ -210,7 +210,12 @@ partial class Form1
         {
             InitializeComponent();
         }
-
+        public static void Main()
+        {
+            //Application.EnableVisualStyles();
+            //Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Form1());
+        }
         private void timer1_Tick(object sender, EventArgs e)
         {
             DateTime now = DateTime.Now;
@@ -339,17 +344,4 @@ partial class Form1
         }
     }
 
-    internal static class Program
-    {
-        /// <summary>
-        /// Ponto de entrada principal para o aplicativo.
-        /// </summary>
-        [STAThread]
-        static void Main()
-        {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
-        }
     }
-}
